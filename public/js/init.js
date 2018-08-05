@@ -99,6 +99,18 @@ jQuery(document).ready(function($) {
   /*	Modal Popup
 ------------------------------------------------------*/
 
+  //1
+  /* setTimeout(() => {
+    $('.item-wrap a').magnificPopup({
+        type:'inline',
+        fixedContentPos: false,
+        removalDelay: 200,
+        showCloseBtn: false,
+        mainClass: 'mfp-fade'
+ 
+     }); 
+}, 0); */
+
   $('.item-wrap a').magnificPopup({
     type: 'inline',
     fixedContentPos: false,
@@ -171,4 +183,6 @@ jQuery(document).ready(function($) {
     });
     return false;
   });
+
+  // console.log("inited");
 });
