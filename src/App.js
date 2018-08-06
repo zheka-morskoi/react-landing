@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ResumeAPI from './api';
 
 import Header from './Components/Header';
@@ -10,24 +10,21 @@ import Testimonials from './Components/Testimonials';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
-const allData = ResumeAPI.all();
-console.log(allData);
+const App = () => {
+  const allData = ResumeAPI.all();
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <About />
-        <Resume />
-        <Portfolio />
-        <CallToAction />
-        <Testimonials />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="App">
+      <Header data={allData.main} />
+      <About data={allData.main} />
+      <Resume data={allData.resume} />
+      <Portfolio data={allData.portfolio} />
+      <CallToAction />
+      <Testimonials data={allData.testimonials} />
+      <Contact data={allData.main} />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

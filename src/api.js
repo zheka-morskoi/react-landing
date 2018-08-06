@@ -17,7 +17,7 @@ const ResumeAPI = {
         zip: '89102-5816'
       },
       website: 'https://megaweb.jacksparrow.com',
-      resumedownload: 'http://something.com',
+      resumeDownload: 'http://something.com',
       social: [
         {
           name: 'facebook',
@@ -154,7 +154,7 @@ const ResumeAPI = {
             'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
           category: 'Photography',
           tags: 'Photography, Design',
-          image: 'into-the-light.jpg',
+          image: 'intothelight.jpg',
           url: 'http://port4.com',
           modal: '#modal-04'
         },
